@@ -1,0 +1,61 @@
+#filter-bar {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 5px;
+	border-bottom: 1px solid #bbb;
+}
+
+#filter-bar input {
+	float: right;
+	font-size: 100%;
+}
+
+.book-list-item {
+	background-color: #eee;
+	display: flex;
+	width: 1100px;
+	margin: 15px auto;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+}
+
+.book-list-item section {
+	padding: 10px;
+}
+
+.book-list-item section:nth-child(2) {
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 0 1px 0 1px;
+}
+
+.book-list-item section h2 {
+	margin-top: 0;
+}
+
+.book-list-item img {
+	width: 200px;
+	height: 250px;
+}
+
+p.authors {
+	margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+	.book-list-item {
+		flex-direction: column;
+		width: 600px;
+	}
+
+	.book-list-item section:nth-child(1) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.book-list-item section:nth-child(2) {
+		border-width: 1px 0 1px 0;
+	}
+
+}
